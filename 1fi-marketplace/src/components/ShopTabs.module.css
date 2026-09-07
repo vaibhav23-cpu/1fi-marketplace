@@ -1,0 +1,82 @@
+.shopTabsContainer {
+  padding: 15px 14px 8px;
+
+  background: #ffffff;
+}
+
+.shopTabs {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 3px;
+
+  border-radius: 22px;
+
+  background: #f2f1f5;
+}
+
+.shopTab {
+  flex: 1;
+
+  position: relative;
+
+  min-height: 38px;
+
+  padding: 7px 2px;
+
+  border: none;
+  border-radius: 19px;
+
+  background: transparent;
+
+  color: #7c7982;
+
+  font-size: 10.5px;
+  line-height: 1.15;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.shopTab:hover {
+  color: #3211a8;
+}
+
+.activeTab {
+  background: #ffffff;
+
+  color: #3211a8;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 1px 4px
+      rgba(27, 17, 62, 0.06);
+}
+
+.activeTab::after {
+  content: "";
+
+  position: absolute;
+
+  left: 36%;
+  right: 36%;
+  bottom: 3px;
+
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: #3211a8;
+}
+
+@media (max-width: 360px) {
+  .shopTab {
+    font-size: 9.5px;
+  }
+}

@@ -1,0 +1,75 @@
+.brandCard {
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 12px;
+
+  border: 1px solid #eeeef1;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 1px 4px
+      rgba(31, 25, 48, 0.025);
+}
+
+.brandLogo {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #efedf5;
+  border-radius: 12px;
+
+  background: #f6f3ff;
+
+  color: #3211a8;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brandInfo {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.brandInfo h3 {
+  margin: 0 0 5px;
+
+  overflow: hidden;
+
+  color: #232126;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brandInfo p {
+  margin: 0;
+
+  color: #89868e;
+
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.brandArrow {
+  color: #a3a0a8;
+
+  font-size: 25px;
+}

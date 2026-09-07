@@ -1,0 +1,131 @@
+INSERT INTO products (
+    name,
+    slug,
+    description,
+    base_price,
+    image_url
+)
+VALUES
+(
+    'iPhone 17 Pro',
+    'iphone-17-pro',
+    'Premium Apple smartphone with advanced performance and camera capabilities.',
+    129999.00,
+    '/images/iphone-17-pro.png'
+),
+(
+    'MacBook Air M4',
+    'macbook-air-m4',
+    'Lightweight Apple laptop powered by the M4 chip for everyday productivity.',
+    99999.00,
+    '/images/macbook-air-m4.png'
+),
+(
+    'Samsung Galaxy S26',
+    'samsung-galaxy-s26',
+    'Flagship Samsung smartphone with premium performance and camera features.',
+    84999.00,
+    '/images/samsung-galaxy-s26.png'
+);
+
+INSERT INTO variants (
+    product_id,
+    variant_name,
+    variant_value,
+    price,
+    stock
+)
+VALUES
+(
+    1,
+    'Storage',
+    '256GB',
+    129999.00,
+    10
+),
+(
+    1,
+    'Storage',
+    '512GB',
+    149999.00,
+    8
+),
+(
+    2,
+    'Storage',
+    '256GB',
+    99999.00,
+    12
+),
+(
+    2,
+    'Storage',
+    '512GB',
+    119999.00,
+    7
+),
+(
+    3,
+    'Storage',
+    '256GB',
+    84999.00,
+    15
+),
+(
+    3,
+    'Storage',
+    '512GB',
+    94999.00,
+    9
+);
+
+INSERT INTO emi_plans (
+    product_id,
+    months,
+    monthly_amount,
+    interest_rate,
+    total_amount
+)
+VALUES
+(
+    1,
+    6,
+    21666.50,
+    0.00,
+    129999.00
+),
+(
+    1,
+    12,
+    10833.25,
+    0.00,
+    129999.00
+),
+(
+    2,
+    6,
+    16666.50,
+    0.00,
+    99999.00
+),
+(
+    2,
+    12,
+    8333.25,
+    0.00,
+    99999.00
+),
+(
+    3,
+    6,
+    14166.50,
+    0.00,
+    84999.00
+),
+(
+    3,
+    12,
+    7083.25,
+    0.00,
+    84999.00
+);

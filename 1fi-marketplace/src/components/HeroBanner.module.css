@@ -1,0 +1,213 @@
+.heroBanner {
+  width: 100%;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      140deg,
+      #3411a9 0%,
+      #4b1dcc 100%
+    );
+
+  color: #ffffff;
+}
+
+.heroContent {
+  position: relative;
+
+  min-height: 248px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 31px 18px 28px;
+}
+
+.heroText {
+  position: relative;
+
+  z-index: 2;
+
+  width: 66%;
+}
+
+.heroBadge {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  padding: 5px 9px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.38);
+  border-radius: 8px;
+
+  background:
+    rgba(255, 255, 255, 0.11);
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+
+  color:
+    rgba(255, 255, 255, 0.95);
+}
+
+.heroText h1 {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 1.13;
+  letter-spacing: -0.7px;
+
+  font-weight: 700;
+}
+
+.heroText p {
+  max-width: 230px;
+
+  margin: 15px 0 0;
+
+  font-size: 11.5px;
+  line-height: 1.5;
+
+  color:
+    rgba(255, 255, 255, 0.78);
+}
+
+.heroVisual {
+  position: absolute;
+
+  right: -5px;
+  bottom: 26px;
+
+  width: 125px;
+  height: 150px;
+}
+
+.heroShoppingBag {
+  position: absolute;
+
+  right: 10px;
+  bottom: 5px;
+
+  width: 88px;
+  height: 103px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px 13px 20px 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #eae4ff
+    );
+
+  transform: rotate(7deg);
+
+  box-shadow:
+    0 12px 28px
+      rgba(18, 4, 74, 0.25);
+}
+
+.heroBagHandle {
+  position: absolute;
+
+  top: -23px;
+
+  width: 46px;
+  height: 34px;
+
+  border: 8px solid #efeaff;
+  border-bottom: 0;
+  border-radius: 30px 30px 0 0;
+}
+
+.heroRupee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #4220b4;
+
+  color: #ffffff;
+
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.heroCoin {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f8f4ff,
+      #cfc2ff
+    );
+
+  color: #5636c8;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px
+      rgba(18, 4, 74, 0.18);
+}
+
+.heroCoinOne {
+  width: 30px;
+  height: 30px;
+
+  right: 91px;
+  top: 30px;
+
+  font-size: 14px;
+
+  transform: rotate(-15deg);
+}
+
+.heroCoinTwo {
+  width: 24px;
+  height: 24px;
+
+  right: 5px;
+  top: 8px;
+
+  font-size: 11px;
+
+  transform: rotate(12deg);
+}
+
+@media (max-width: 360px) {
+  .heroText {
+    width: 69%;
+  }
+
+  .heroText h1 {
+    font-size: 25px;
+  }
+
+  .heroVisual {
+    right: -18px;
+
+    transform: scale(0.9);
+  }
+}

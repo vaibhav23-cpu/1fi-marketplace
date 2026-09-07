@@ -1,0 +1,426 @@
+.shopPage {
+  min-height: 100vh;
+
+  padding-bottom:
+    calc(
+      120px + env(safe-area-inset-bottom)
+    );
+
+  background: #f7f7f8;
+}
+
+.shopContent {
+  padding:
+    17px 14px
+    calc(
+      120px + env(safe-area-inset-bottom)
+    );
+}
+
+.sectionTitle {
+  margin: 0;
+
+  color: #242128;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brandList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+.nearbyEmptyCard {
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 14px;
+
+  padding: 26px 20px;
+
+  border: 1px solid #ecebf0;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.nearbyLocationIcon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 12px;
+
+  border-radius: 50%;
+
+  background: #eeeaff;
+
+  color: #3211a8;
+}
+
+.nearbyEmptyCard h3 {
+  margin: 0 0 7px;
+
+  color: #28252d;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nearbyEmptyCard p {
+  max-width: 245px;
+
+  margin: 0;
+
+  color: #87838d;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.marketplaceHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+}
+
+.marketplaceSubtitle {
+  margin: 5px 0 0;
+
+  color: #89858e;
+
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.marketplaceProductList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.marketplaceProductLink {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+.marketplaceProductCard {
+  min-height: 132px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 12px;
+
+  border: 1px solid #ecebf0;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px
+      rgba(31, 25, 48, 0.035);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.marketplaceProductCard:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px
+      rgba(31, 25, 48, 0.07);
+}
+
+.marketplaceProductImage {
+  width: 104px;
+  height: 108px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #f7f6f9;
+
+  color: #99959f;
+
+  font-size: 11px;
+}
+
+.marketplaceProductImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 8px;
+}
+
+.marketplaceProductInfo {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.marketplaceProductTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 8px;
+}
+
+.marketplaceProductTop h3 {
+  margin: 0;
+
+  color: #242128;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.marketplaceArrow {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9a96a0;
+}
+
+.marketplaceFrom {
+  margin: 9px 0 2px;
+
+  color: #929098;
+
+  font-size: 10.5px;
+}
+
+.marketplaceProductPrice {
+  margin: 0;
+
+  color: #242128;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.marketplaceEmiBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 7px;
+
+  margin-top: 9px;
+}
+
+.marketplaceEmiLabel {
+  padding: 4px 7px;
+
+  border-radius: 7px;
+
+  background: #eeeaff;
+
+  color: #3211a8;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.marketplaceEmiValue {
+  color: #5f5b65;
+
+  font-size: 9.5px;
+  font-weight: 500;
+
+  text-align: right;
+}
+
+.marketplaceLoading {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.marketplaceSkeleton {
+  min-height: 132px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 12px;
+
+  border: 1px solid #ecebf0;
+  border-radius: 18px;
+
+  background: #ffffff;
+}
+
+.skeletonImage {
+  width: 104px;
+  height: 108px;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f0eef3 25%,
+      #f7f5f9 50%,
+      #f0eef3 75%
+    );
+
+  background-size: 200% 100%;
+
+  animation:
+    skeletonLoading 1.3s infinite;
+}
+
+.skeletonContent {
+  flex: 1;
+}
+
+.skeletonLine {
+  width: 90%;
+  height: 11px;
+
+  margin-bottom: 10px;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f0eef3 25%,
+      #f7f5f9 50%,
+      #f0eef3 75%
+    );
+
+  background-size: 200% 100%;
+
+  animation:
+    skeletonLoading 1.3s infinite;
+}
+
+.skeletonTitle {
+  width: 70%;
+  height: 14px;
+}
+
+.skeletonSmall {
+  width: 55%;
+}
+
+.marketplaceErrorCard,
+.marketplaceEmptySearch {
+  padding: 24px 18px;
+
+  border: 1px solid #ecebf0;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.marketplaceErrorCard p {
+  margin: 0;
+
+  color: #7c4a4a;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.marketplaceEmptySearch h3 {
+  margin: 0 0 6px;
+
+  color: #29262e;
+
+  font-size: 15px;
+}
+
+.marketplaceEmptySearch p {
+  margin: 0;
+
+  color: #8a8790;
+
+  font-size: 12px;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .shopContent {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .marketplaceProductCard {
+    gap: 10px;
+
+    padding: 10px;
+  }
+
+  .marketplaceProductImage {
+    width: 92px;
+    height: 100px;
+  }
+
+  .marketplaceProductTop h3 {
+    font-size: 13px;
+  }
+
+  .marketplaceEmiBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .marketplaceEmiValue {
+    text-align: left;
+  }
+}
